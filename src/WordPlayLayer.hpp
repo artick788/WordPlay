@@ -4,6 +4,8 @@
 #include <VelyraAppFramework/Layer.hpp>
 
 #include "Layouts/CardGameLayout.hpp"
+#include "Model/Store.hpp"
+#include "Popups/StatsPopup.hpp"
 
 namespace WordPlay {
 
@@ -19,11 +21,15 @@ namespace WordPlay {
 
         void loadSettings();
 
+        void loadProgramArgs();
+
         void saveSettings();
 
         void attachPopups();
 
     private:
+        Store m_Store;
+        SP<StatsPopup> m_StatsPopup;
         CardGameLayout m_CardGameLayout;
     };
 

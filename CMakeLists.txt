@@ -14,6 +14,18 @@ add_executable(WordPlay main.cpp
 
     src/Layouts/CardGameLayout.cpp
     src/Layouts/CardGameLayout.hpp
+
+    src/Model/Session.hpp
+    src/Model/Store.cpp
+    src/Model/Store.hpp
+    src/Model/WordList.cpp
+    src/Model/WordList.hpp
+
+    src/Popups/StatsPopup.cpp
+    src/Popups/StatsPopup.hpp
+
+    src/Widgets/Widgets.cpp
+    src/Widgets/Widgets.hpp
 )
 
 vl_configure_target(WordPlay)
